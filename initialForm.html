@@ -13,10 +13,10 @@
 <script>
 $(document).ready(function(){
   $(".dropdown").on("hide.bs.dropdown", function(){
-    $(".btn").html('Dropdown <span class="caret"></span>');
+    //$(".btn").html('Dropdown <span class="caret"></span>');
   });
   $(".dropdown").on("show.bs.dropdown", function(){
-    $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+    //$(".btn").html('Dropdown <span class="caret caret-up"></span>');
   });
 });
 </script>
@@ -25,25 +25,29 @@ $(document).ready(function(){
 
 <body>
 
-  <h1>My Food Buddy</h1>
+  <h1>Register for My Food Buddy</h1>
 
   <form alight="center" id="form-ajax" action="form-ajax.php">
-    <label alight="center">Username</label><br/><input type="text" name="ID" /><br />
-    <label>Password</label><br/><input type="text" name="Name" /><br />
-    <label>Age</label><br/><input type="text" name="Address" /><br /><br/>
+    <label alight="center">Username</label><br/><input type="text" name="user" /><br /><br />
+
+    <label>Password</label><br/><input type="text" name="password" /><br /><br />
+
+    <label>Repeat Password</label><br /><input type="password" name="pass2" /><br /><br />
+
+    <label>Age</label><br/><input type="text" name="age" /><br /><br/>
 
     <div class="dropdown">
       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gender
       <span class="caret"></span></button>
       <ul class="dropdown-menu">
-        <li><a value="655">female</a></li>
-        <li><a href="66">male</a></li>
+        <li><a value="655">Female</a></li>
+        <li><a value="66">Male</a></li>
       </ul><br/><br/>
     </div>
 
-    <label>Height</label><br/>
-    <input type="text" name="Address"/><label>feet</label><input type="text" name="Address"/><label>inches</label><br/><br/>
-    <label>Weight</label><br/><input type="text" name="Phone" /><label>lbs.</label><br /><br/>
+    <label>Height</label><br/><input type="text" name="height"/><label>inches</label><br/><br/>
+
+    <label>Weight</label><br/><input type="text" name="weight" /><label>lbs.</label><br /><br/>
 
     <div class="dropdown">
       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Activity Level
