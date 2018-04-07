@@ -33,7 +33,7 @@
 							$_SESSION['name'] = $row["name"];
 							//$_SESSION['color'] = $row["color"];
 							//$_SESSSION['classes'] = $row["classes"];
-							header("Location: dash.php");
+							header("Location: http://myfoodbuddy.net/dash.php");
 						} else {
 							echo "<p style='color: red;'>Username/Password is Incorrect</p>";
 						}

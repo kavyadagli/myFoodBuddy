@@ -27,7 +27,7 @@ $sql = "insert into login (user, pass, name, gender, age, height, weight, activi
 if ($conn->query($sql) === TRUE) {
 	$_SESSION['user'] = $user;
 	$_SESSION['name'] = $name;
-	header('Location: dash.php');
+	header('Location: http://myfoodbuddy.net/dash.php');
 } else {
 	echo "Had some problems, please return to registration form and try again";
 }
