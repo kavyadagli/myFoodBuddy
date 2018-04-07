@@ -10,35 +10,35 @@
 
 <body onload="setInterval(checkFormValid(), 500)">
 
-	<h1>Register for My Food Buddy</h1>
+	<h1>REGISTER FOR MY FOOD BUDDY</h1>
 
 	<form alight="center" id="form-ajax" action="reg_sup.php" method="post">
-		<label alight="center">Username</label><br/><input type="text" name="user" id="user" /><br /><br />
+		<div class="username">
+			<label alight="center">USERNAME</label><br/><input type="text" name="user" id="user" />
+			<label>PASSWORD</label><br/><input type="text" name="pass" id="pass" />
+			<label>REPEAT PASSWORD</label><br /><input type="password" name="pass2" id="pass" />
+		</div>
 
-		<label>Password</label><br/><input type="text" name="pass" id="pass" /><br /><br />
+		<label>AGE</label><br/><input type="number" name="age" id="age" /><br /><br/>
 
-		<label>Repeat Password</label><br /><input type="password" name="pass2" id="pass" /><br /><br />
+		<label>HEIGHT</label><br/><input type="number" name="height" id="height" /><label>inches</label><br/><br/>
 
-		<label>Age</label><br/><input type="number" name="age" id="age" /><br /><br/>
-
-		<label>Height</label><br/><input type="number" name="height" id="height" /><label> inches</label><br/><br/>
-
-		<label>Weight</label><br/><input type="number" name="weight" id="weight" /><label> lbs.</label><br /><br/>
+		<label>WEIGHT</label><br/><input type="number" name="weight" id="weight" /><label>lbs.</label><br/><br/>
 
 		<div class="dropdown">
 			<select name="gender" id="gender">
-	  			<option value="F">Female</option>
-	  			<option value="M">Male</option>
+	  			<option value="F">FEMALE</option>
+	  			<option value="M">MALE</option>
 			</select>
 		</div><br/>
 
 		<div class="dropdown">
 			<select name="activity" id="activity">
-	  			<option value="1.2">Sendentary</option>
-	  			<option value="1.375">Light Activity</option>
-	  			<option value="1.55">Moderate Activity</option>
-	  			<option value="1.725">Very Active</option>
-				<option value="1.9">Extremely Active</option>
+	  			<option value="1.2">SENDENTARY</option>
+	  			<option value="1.375">LIGHT ACTIVITY</option>
+	  			<option value="1.55">MODERATE ACTIVITY</option>
+	  			<option value="1.725">VERY ACTIVE</option>
+				<option value="1.9">EXTREMELY ACTIVE</option>
 			</select>
 		</div><br/>
 
@@ -54,7 +54,7 @@
 			}
 		</script>
 
-		<button type="button" id="submit">Submit</button><p id="errorText"></p>
+		<button type="button" id="submit">SUBMIT</button><p id="errorText"></p>
 	</form>
 
 </body>

@@ -1,6 +1,7 @@
 h1 {
   font-family: sans-serif;
-  color: black;
+  color: white;
+  font-weight: lighter;
   /**outline: solid;
   outline-color: grey;
   outline-width: 5px;
@@ -9,29 +10,29 @@ h1 {
 }
 
 input{
-  margin-left: auto;
-  margin-right: auto;
+  /**margin-left: auto;
+  margin-right: auto**/
+  background-color: #99cc66;
 }
 
 label{
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
-  color: grey;
+  color: white;
 }
 
-p.question{
-  font-family: sans-serif;
-  color: grey;
-  font-size: 150%;
-  text-align: center;
-}
 
 form{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /**margin-left: auto;
+  margin-right: auto;**/
+  /**width: 20%;**/
+}
+
+div.username {
   width: 20%;
+  margin:auto;
 }
 
 input.button {
@@ -48,13 +49,13 @@ input.button {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #323232;
+	background: #99cc66;
 	color: red;
 }
 
 #wrapper {
 	width: 80%;
-	background: white;
+	background: #99cc66;
 	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -77,20 +78,20 @@ body {
 }
 
 a {
-	color: red;
+	color: white;
 	padding: 2px;
 }
 
 a:hover {
-	background: white;
+	background: red;
 	color: #afafaf;
 }
 
 #loginContain {
-	background: #afafaf;
+	background: #99cc66;
 	margin-left: auto;
 	margin-right: auto;
-	border: 2px solid red;
+	border: 2px solid white;
 	box-shadow: 0px 10px 20px 0px black;
 	width: 40%;
 }
@@ -98,7 +99,7 @@ a:hover {
 .loginP {
 	margin-bottom: 0.25em;
 	width: auto;
-	color: white;
+	color: #99cc66;
 }
 
 #tableWrapper {
@@ -122,7 +123,7 @@ a:hover {
 }
 
 table {
-	background: #AFAFAF;
+	background: #99cc66;
 	margin-left: auto;
 	margin-right: auto;
 	border-collapse: collapse;
@@ -131,11 +132,11 @@ table {
 }
 
 .tasksTab tr:first-child {
-	background: #7d7d7d;
+	background: #99cc66;
 }
 
 tr.finishedRows {
-	background: #9f9f9f;
+	background: #99cc66;
 }
 
 th {
@@ -149,7 +150,7 @@ td {
 }
 
 select, input[type=text], input[type=password], input[type=date], input[type=submit] {
-	background-color: #7d7d7d;
+	background-color: #99cc66;
 	border: 1px solid white;
 	color: white;
 }
@@ -175,7 +176,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	cursor: pointer;
-	border: 2px solid white;
+	border: 2px solid red;
 	background: #646464;
 	margin: 1px;
 }
@@ -194,7 +195,7 @@ input[type=submit]:hover {
 }
 
 #viewAll:checked + #displayTogLab {
-	background: white;
+	background: red;
 	/* color: #afafaf; */
 	padding: 3px;
 }
@@ -206,7 +207,7 @@ input[type=submit]:hover {
 #myProgress {
 	width: 80%;
 	padding: 0;
-	border: 3px solid white;
+	border: 3px solid red;
 	background-color: #afafaf;
 	margin-left: auto;
 	margin-right: auto;
