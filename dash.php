@@ -46,6 +46,15 @@ if ($conn->connect_error) {
 					<td id="cal_left"></td>
 				</tr>
 			</table>
+			<div id="addFood">
+				<form>
+					<input type="text" placeholder="Food Name" name="food" id="addformFood" />
+					<input type="number" placeholder="Calories" name="calories" id="addformCal" />
+					<input type="submit" onclick="addFood()" />
+				</form>
+			</div>
+			<div id="tableWrapper">
+			</div>
 		</div>
 	</div>
 </body>
