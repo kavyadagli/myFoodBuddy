@@ -22,7 +22,7 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "insert into login (user, pass, name, gender, age, height, weight, activity) values ('$user', '$pass', '$name', '$gender', '$age', '$height', '$weight', '$activity');";
+$sql = "insert into login (user, pass, name, gender, age, height, weight, activity) values ('" . $user . "', '" . $pass . "', '" . $name . "', '" . $gender . "', '" . $age . "', '" . $height . "', '" . $weight . "', '" . $activity . "'); create table " . $user . " (food varchar(255) NOT NULL, calories int NOT NULL, eatdate date NOT NULL);";
 
 if ($conn->query($sql) === TRUE) {
 	$_SESSION['user'] = $user;
