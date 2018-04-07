@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 	<title>My Food Buddy - Dashboard</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body onload="updateList();">
 	<div id="header">
 		<h1 id="headerText"><?php echo $name; ?>'s Dashboard</h1>
 	</div>
