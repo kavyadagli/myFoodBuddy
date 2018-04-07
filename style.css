@@ -1,0 +1,45 @@
+h1 {
+  font-family: sans-serif;
+  color: grey;
+  /**outline: solid;
+  outline-color: grey;
+  outline-width: 5px;
+  width: 30%;**/
+  text-align: center;
+}
+
+input{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  color: grey;
+}
+
+p.question{
+  font-family: sans-serif;
+  color: grey;
+  font-size: 150%;
+  text-align: center;
+}
+
+form{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+input.button {
+  align-self: center;
+}
+
+.caret.caret-up {
+    border-top-width: 0;
+    border-bottom: 4px solid;
+    color: white;
+  }
