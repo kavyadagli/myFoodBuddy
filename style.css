@@ -43,3 +43,179 @@ input.button {
     border-bottom: 4px solid;
     color: white;
   }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #323232;
+	color: red;
+}
+
+#wrapper {
+	width: 80%;
+	background: #646464;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	padding-bottom: 30px;
+	text-align: center;
+	z-index: 10;
+	box-shadow: 0px 10px 20px 0px black;
+}
+
+#title {
+	font-size: 3em;
+	color: white;
+	-webkit-text-stroke: .5px red;
+	text-decoration: underline;
+}
+
+.hidden {
+	display: none;
+}
+
+a {
+	color: red;
+	padding: 2px;
+}
+
+a:hover {
+	background: red;
+	color: #afafaf;
+}
+
+#loginContain {
+	background: #afafaf;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid red;
+	box-shadow: 0px 10px 20px 0px black;
+	width: 40%;
+}
+
+.loginP {
+	margin-bottom: 0.25em;
+	width: auto;
+	color: white;
+}
+
+#tableWrapper {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: auto;
+}
+
+#taskBox {
+	
+}
+
+#PendingTasks {
+	color: white;
+}
+
+#AllTasks {
+	color: white;
+}
+
+table {
+	background: #AFAFAF;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 2px solid red;
+	box-shadow: 0px 10px 20px 0px black;
+}
+
+.tasksTab tr:first-child {
+	background: #7d7d7d;
+}
+
+tr.finishedRows {
+	background: #9f9f9f;
+}
+
+th {
+	padding: 5px;
+	color: white;
+}
+
+td {
+	padding: 5px;
+	color: white
+}
+
+select, input[type=text], input[type=password], input[type=date], input[type=submit] {
+	background-color: #7d7d7d;
+	border: 1px solid red;
+	color: white;
+}
+
+select, input[type=text], input[type=password], input[type=date] {
+	box-sizing: border-box;
+	width: 166px;
+}
+
+select:focus, input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, input[type=submit]:focus {
+	outline: none;
+	border: 2px solid red;
+}
+
+option:hover, option:active, option:focus {
+	background: #949494 !important;
+}
+
+input[type=submit] {
+	font-size: 14px;
+	margin: 2px;
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+	border: 2px solid red;
+	background: #646464;
+	margin: 1px;
+}
+
+#displayTogLab {
+	cursor: pointer;
+	color: white;
+}
+
+#displayTogLab:hover {
+	text-decoration: underline;
+}
+
+#viewAll {
+	display: none;
+}
+
+#viewAll:checked + #displayTogLab {
+	background: red;
+	/* color: #afafaf; */
+	padding: 3px;
+}
+
+#status {
+	color: white;
+}
+
+#myProgress {
+	width: 80%;
+	padding: 0;
+	border: 3px solid red;
+	background-color: #afafaf;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 10px 20px 0px black;
+}
+
+#myBar {
+	width: 1%;
+	height: 80px;
+	background-color: red;
+	margin: 0;
+}
