@@ -61,7 +61,7 @@
 			}
 		</script>
 
-		<button type="button" id="submit">SUBMIT</button><p id="errorText"></p>
+		<button type="submit" id="submit">SUBMIT</button><p id="errorText"></p>
 	</form>
 
 </body>
