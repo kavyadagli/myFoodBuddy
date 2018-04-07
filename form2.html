@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html lang="en-au">
+<meta charset="utf-8" />
+
+<title>My Food Buddy</title>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+<script>
+</script>
+
+</head>
+
+<body>
+
+  <h1>My Food Buddy</h1>
+
+  <form alight="center" id="form-ajax" action="form-ajax.php">
+    <label alight="center">Username</label><br/><input type="text" name="ID" /><br />
+    <label>Password</label><br/><input type="text" name="Name" /><br />
+    <label>Age</label><br/><input type="text" name="Address" /><br />
+    <label>Height</label><br/>
+    <input type="text" name="Address"/><label>feet</label><input type="text" name="Address"/><label>inches</label><br/>
+    <label>Weight</label><br/><input type="text" name="Phone" /><label>lbs.</label><br />
+    <label>Gender</label><br/><input type="email" name="Email" /><br />
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gender
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">female</a></li>
+        <li><a href="#">male</a></li>
+      </ul>
+    </div>
+
+    <p id= "question" class="question">What is your activity level?</p>
+    <ul class="answers">
+      <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Non-existant</label><br/>
+      <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Moderate</label><br/>
+      <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Active</label><br/>
+    </ul>
+
+    <button type="button">Click Me!</button>
+  </form>
+
+</body>
+
+</html>
