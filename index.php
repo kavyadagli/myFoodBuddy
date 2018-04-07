@@ -57,6 +57,7 @@
 					<input type="submit" />
 				</form>
 			</div>
+			<a href="register.php">Sign Up</a>
 		</div>
 	</body>
 </html>

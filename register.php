@@ -1,35 +1,53 @@
-<?php
+<!DOCTYPE>
+<html lang="en-au">
+<meta charset="utf-8" />
 
-session_start();
+<title>My Food Buddy</title>
 
-$user = $_POST['user'];
-$pass = $_POST['pass'];
-$age = $_POST['age'];
-$height = $_POST['height'];
-$weight = $_POST['weight'];
-$gender = $_POST['gender'];
-$activity = $_POST['activity'];
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<h1>Register for My Food Buddy</h1>
+
+	<form alight="center" id="form-ajax" action="reg_sup.php" method="post">
+		<label alight="center">Username</label><br/><input type="text" name="user" /><br /><br />
+
+		<label>Password</label><br/><input type="text" name="password" /><br /><br />
+
+		<label>Repeat Password</label><br /><input type="password" name="pass2" /><br /><br />
+
+		<label>Age</label><br/><input type="text" name="age" /><br /><br/>
+
+		<label>Height</label><br/><input type="text" name="height"/><label> inches</label><br/><br/>
+
+		<label>Weight</label><br/><input type="text" name="weight" /><label> lbs.</label><br /><br/>
+
+		<div class="dropdown">
+			<select name="gender">
+	  			<option value="F">Female</option>
+	  			<option value="M">Male</option>
+			</select>
+		</div><br/>
+
+		<div class="dropdown">
+			<select name="activityLevel">
+	  			<option value="1.2">Sendentary</option>
+	  			<option value="1.375">Light Activity</option>
+	  			<option value="1.55">Moderate Activity</option>
+	  			<option value="1.725">Very Active</option>
+				<option value="1.9">Extremely Active</option>
+			</select>
+		</div><br/>
 
 
-$servername = "localhost";
-$username = "root";
-$password = "ashSQLpassword";
-$dbname = "foodDB";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+		<button type="button">Submit</button>
+	</form>
 
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-}
+</body>
 
-$sql = "insert into login (user, pass, name, gender, age, height, weight, activity) values ('$user', '$pass', '$name', '$gender', '$age', '$height', '$weight', '$activity');";
-
-if ($conn->query($sql) === TRUE) {
-	$_SESSION['user'] = $user;
-	$_SESSION['name'] = $name;
-	header('Location: dash.php');
-} else {
-	echo "Had some problems, please return to registration form and try again";
-}
-
-?>
+</html>
