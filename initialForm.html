@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html lang="en-au">
+<meta charset="utf-8" />
+
+<title>My Food Buddy</title>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".dropdown").on("hide.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret"></span>');
+  });
+  $(".dropdown").on("show.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+  });
+});
+</script>
+
+</head>
+
+<body>
+
+  <h1>My Food Buddy</h1>
+
+  <form alight="center" id="form-ajax" action="form-ajax.php">
+    <label alight="center">Username</label><br/><input type="text" name="ID" /><br />
+    <label>Password</label><br/><input type="text" name="Name" /><br />
+    <label>Age</label><br/><input type="text" name="Address" /><br /><br/>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gender
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a value="655">female</a></li>
+        <li><a href="66">male</a></li>
+      </ul><br/><br/>
+    </div>
+
+    <label>Height</label><br/>
+    <input type="text" name="Address"/><label>feet</label><input type="text" name="Address"/><label>inches</label><br/><br/>
+    <label>Weight</label><br/><input type="text" name="Phone" /><label>lbs.</label><br /><br/>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Activity Level
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a value="1.2">Sendentary</a></li>
+        <li><a value="1.375">Light Activity</a></li>
+        <li><a value="1.55">Moderate Activity</a></li>
+        <li><a value="1.725">Very Active</a></li>
+        <li><a value="1.9">Extremely Active</a></li>
+      </ul>
+    </div><br/>
+
+    <button href= "mealForm.html" type="button">Submit</button>
+  </form>
+
+</body>
+
+</html>
