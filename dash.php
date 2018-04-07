@@ -20,6 +20,7 @@ if ($conn->connect_error) {
 <head>
 	<title>My Food Buddy - Dashboard</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="calculation.js"></script>
 </head>
 <body onload="updateList();">
 	<div id="header">
