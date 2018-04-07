@@ -19,8 +19,9 @@
 
 	<form id="form-ajax" action="reg_sup.php" method="post">
 		<div class="username">
+			<label alight="center">NAME</label><input type="text" name="name" id="name" />
 			<label alight="center">USERNAME</label><input type="text" name="user" id="user" />
-			<label>PASSWORD</label><input type="text" name="pass" id="pass" />
+			<label>PASSWORD</label><input type="password" name="pass" id="pass" />
 			<label>REPEAT PASSWORD</label><input type="password" name="pass2" id="pass" />
 		</div>
 
