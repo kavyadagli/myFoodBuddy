@@ -143,13 +143,13 @@ a:hover {
 }
 
 table {
-	background: #99cc66;
+	background: #71b32f;
 	margin-left: auto;
 	margin-right: auto;
 	border-collapse: collapse;
 	border: 2px solid white;
 	box-shadow: 0px 10px 20px 0px black;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .tasksTab tr:first-child {
@@ -161,12 +161,12 @@ tr.finishedRows {
 }
 
 th {
-	padding: 5px;
+	padding: 8px;
 	color: white;
 }
 
 td {
-	padding: 5px;
+	padding: 8px;
 	color: white
 }
 
@@ -245,7 +245,7 @@ input[type=submit]:hover {
 }
 
 #header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 150px;
@@ -254,6 +254,7 @@ input[type=submit]:hover {
 	margin: 0;
 	padding: 10px;
 	border-bottom: 5px solid white;
+	background: #71b32f;
 }
 
 #under {
@@ -263,7 +264,7 @@ input[type=submit]:hover {
 }
 
 #avatarSideBar {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	height: 100%;
 	width: 20%;
@@ -274,4 +275,6 @@ input[type=submit]:hover {
 #content {
 	margin: 0px 0px 0px 20%;
 	text-align: center;
+	height: 2000px;
+	padding-top: 25px;
 }

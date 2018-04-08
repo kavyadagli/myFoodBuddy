@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 session_start();
 $user = $_SESSION['user'];
 $name = $_SESSION['name'];
@@ -14,17 +14,18 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-?>
+?>-->
 <!DOCTYPE html>
 <html>
 <head>
 	<title>My Food Buddy - Dashboard</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="calculation.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body onload="updateList();" style="margin: 0;">
 	<div id="header">
-		<h1 id="title"><?php echo $name; ?>'s Dashboard</h1>
+		<h1 id="title"><?php echo $name; ?>test's Dashboard</h1>
 	</div>
 	<div id="under">
 		<div id="avatarSideBar">
@@ -48,11 +49,13 @@ if ($conn->connect_error) {
 				</tr>
 			</table>
 			<div id="addFood">
-				<form>
-					<input type="text" placeholder="Food Name" name="food" id="addformFood" />
-					<input type="number" placeholder="Calories" name="calories" id="addformCal" />
-					<input type="submit" onclick="addFood()" />
-				</form>
+				<div id="formContain">
+					<form>
+						<input type="text" placeholder="Food Name" name="food" id="addformFood" />
+						<input type="number" placeholder="Calories" name="calories" id="addformCal" />
+						<input type="submit" onclick="addFood()" />
+					</form>
+				</div>
 			</div>
 			<div id="tableWrapper">
 			</div>
