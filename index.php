@@ -46,7 +46,7 @@
 		?>
 		<div id="wrapper">
 			<h1 id="title">My Food Buddy Login</h1>
-			<div id="loginContain">
+			<div id="formContain">
 				<form action="index.php" method="POST">
 					<input type="text" name="user" placeholder="Username" /><br /><br />
 					<input type="password" name="pass" placeholder="Password" /><br /><br />
