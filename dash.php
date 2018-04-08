@@ -53,7 +53,7 @@ if ($conn->connect_error) {
 					<form>
 						<input type="text" placeholder="Food Name" name="food" id="addformFood" />
 						<input type="number" placeholder="Calories" name="calories" id="addformCal" />
-						<input type="submit" onclick="addFood(<?php echo $user; ?>)" />
+						<input type="submit" onclick="addFood()" />
 					</form>
 				</div>
 			</div>

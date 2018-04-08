@@ -31,7 +31,7 @@ function updateList() {
 	});
 }
 
-function addFood(user) {
+function addFood() {
 	var foodin = document.getElementById("addformFood").value;
 	var calin = document.getElementById("addformCal").value;
 	var dt = new Date();
