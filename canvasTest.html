@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script>
+  window.onload = function() {
+    var xPos = 10;
+    var yPos = 400;
+    var xDist = 325-10;
+    var yDist = 400-10;
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var mb = document.getElementById("mb")
+    var mnt = document.getElementById("mnt");
+    ctx.drawImage(mnt, 0, 0);
+    ctx.drawImage(mb, xPos, yPos, 50, 50);
+    }
+
+    var xPos = 10;
+    var yPos = 400;
+    var xDist = 325-10;
+    var yDist = 400-10;
+
+    button.onclick = function moveMeatBall(percent){
+      if (percent == 100){
+        ctx.drawImage(mb, 325, 10, 50, 50);
+      } else if(percent >= 200) {
+          ctx.drawImage(mb, 650, 425, 50, 50);
+      } else if (percent >= 100 && percent <= 200){
+        var xTarget = xDist*(percent/100);
+        var yTarget = yDist*(percent/100);
+        while (xPos == xTarget && yPos == yTarget){
+          xPos *= 1.24;
+          yPos *= 1.24;
+        }
+
+        ctx.drawImage(mb, xPos, yPos, 50, 50);
+      } else {
+        xPos *= 1.24;
+        yPos *= 1.24;
+        ctx.drawImage(mb, xPos, yPos, 50, 50);
+      }
+    }
+  </script>
+  <canvas id="myCanvas" width="700" height="500" style="border:1px solid #d3d3d3;"></canvas>
+  <img style="display: none;" id="mnt" width="500" height="500" src="mnt.png" alt="Mountain">
+  <img style="display: none;" id="mb" width="10px" height="10px" src="meatball.png" alt="meatball">
+
+  <button name="button" onclick="moveMeatBall(50);">Submit</button>
+</body>
+</html>
