@@ -50,7 +50,7 @@
 				<form action="index.php" method="POST">
 					<input type="text" name="user" placeholder="Username" /><br /><br />
 					<input type="password" name="pass" placeholder="Password" /><br /><br />
-					<input type="submit" /><br />
+					<input type="submit" /><br /><br />
 				</form>
 				<a href="register.php">Don't have an account? Sign Up</a><br />
 			</div>
