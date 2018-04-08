@@ -31,7 +31,7 @@ function updateList() {
 	});
 }
 
-function addFood() {
+function addFood(user) {
 	var foodin = document.getElementById("addformFood").value;
 	var calin = document.getElementById("addformCal").value;
 	var dt = new Date();
@@ -45,9 +45,11 @@ function addFood() {
 			'function': 'add',
 			'food': foodin,
 			'cal': calin,
+			'user': user,
 		},
 		dataType: "json",
 		success: function(data) {
+			document.getElementById("avatarSideBar").innerHTML = data;
 			updateList();
 		},
 	});
