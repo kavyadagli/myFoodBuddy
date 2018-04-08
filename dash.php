@@ -25,7 +25,7 @@ if ($conn->connect_error) {
 </head>
 <body onload="updateList();" style="margin: 0;">
 	<div id="header">
-		<h1 id="title"><?php echo $name; echo date("Y-m-d"); ?>'s Dashboard</h1>
+		<h1 id="title"><?php echo $name; ?>'s Dashboard</h1>
 	</div>
 	<div id="under">
 		<div id="avatarSideBar">

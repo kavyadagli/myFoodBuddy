@@ -2,12 +2,12 @@
 
 session_start();
 $table = $_SESSION['user'];
-$conn = new mysqli('localhost', 'root', 'ashSQLpassword', 'agendaDB');
+$conn = new mysqli('localhost', 'root', 'ashSQLpassword', 'foodDB');
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $date = date("Y-m-d");
-$sql = "SELECT food, calories FROM $table";// WHERE eatdate='$date'";
+$sql = "SELECT * FROM $table";// WHERE eatdate='$date'";
 $result = $conn->query($sql);
 
 echo "<div id='foodEaten' style='display: block;'>";
