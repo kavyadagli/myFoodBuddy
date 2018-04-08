@@ -69,7 +69,7 @@ input.button {
 body {
 	font-family: 'Roboto', sans-serif;
 	background: #99cc66;
-	color: red;
+	color: white;
 }
 
 #wrapper {
@@ -102,8 +102,8 @@ a {
 }
 
 a:hover {
-	background: red;
-	color: #afafaf;
+	background: white;
+	color: #99cc66;
 }
 
 #loginContain {
@@ -197,8 +197,9 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	cursor: pointer;
-	border: 2px solid red;
-	background: #646464;
+	border: 2px solid white;
+	background: white;
+	color: #99cc66;
 	margin: 1px;
 }
 

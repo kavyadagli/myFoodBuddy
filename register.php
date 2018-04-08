@@ -10,7 +10,7 @@
 
 <body onload="setInterval(checkFormValid(), 500)">
 
-	<center><h1 align="center" style="text-align: center;">MY FOOD BUDDY</h1></center>
+	<center><h1 id="title">MY FOOD BUDDY</h1></center>
 	<div id="empty-space"><div>
 	<center><p><italic>Register below with your <br/>
 	information for My Food Buddy below to adopt<br/>
