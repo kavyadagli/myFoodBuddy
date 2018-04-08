@@ -3,12 +3,9 @@ h1 {
   letter-spacing: 3px;
   color: white;
   font-weight: lighter;
-  outline: solid;
-  outline-color: white;
-  outline-width: 2px;
   width: 50%;
   /**overflow: hidden;**/
-  align: center;
+  text-align: center;
   align-content: center;
 }
 
@@ -85,14 +82,14 @@ body {
 	padding-bottom: 30px;
 	text-align: center;
 	z-index: 10;
-	box-shadow: 0px 10px 20px 0px black;
 }
 
 #title {
 	font-size: 3em;
 	color: white;
-	-webkit-text-stroke: .5px red;
-	text-decoration: underline;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hidden {
@@ -113,8 +110,9 @@ a:hover {
 	background: #99cc66;
 	margin-left: auto;
 	margin-right: auto;
-	border: 2px solid white;
-	box-shadow: 0px 10px 20px 0px black;
+	padding: 10px;
+	/*border: 2px solid white;
+	box-shadow: 0px 10px 20px 0px black;*/
 	width: 40%;
 }
 
@@ -175,6 +173,7 @@ select, input[type=text], input[type=password], input[type=date], input[type=sub
 	background-color: #99cc66;
 	border: 1px solid white;
 	color: white;
+	padding: 3px;
 }
 
 select, input[type=text], input[type=password], input[type=date] {

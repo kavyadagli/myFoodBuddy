@@ -5,7 +5,7 @@
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<!--<?php
+		<?php
 		session_start();
 		$user = $_POST['user'];
 		$pass = $_POST['pass'];
@@ -43,19 +43,17 @@
 				}
 			}
 		}
-		?>-->
+		?>
 		<div id="wrapper">
 			<h1 id="title">My Food Buddy Login</h1>
 			<div id="loginContain">
 				<form action="index.php" method="POST">
-					<p class="loginP">Username:</p>
-					<input type="text" name="user" />
-					<p class="loginP">Password:</p>
-					<input type="password" name="pass" /><br /><br />
+					<input type="text" name="user" placeholder="Username" /><br /><br />
+					<input type="password" name="pass" placeholder="Password" /><br /><br />
 					<input type="submit" />
 				</form>
+				<a href="register.php">Sign Up</a><br />
 			</div>
-			<a href="register.php">Sign Up</a>
 		</div>
 	</body>
 </html>
