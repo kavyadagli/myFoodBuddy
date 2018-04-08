@@ -1,9 +1,9 @@
-<!--<?php
+<?php
 session_start();
 $user = $_SESSION['user'];
 $name = $_SESSION['name'];
 
-$servername = "localhost";
+/*$servername = "localhost";
 $username = "root";
 $password = "ashSQLpassword";
 $dbname = "foodDB";
@@ -12,9 +12,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
-}
+}*/
 
-?>-->
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +25,7 @@ if ($conn->connect_error) {
 </head>
 <body onload="updateList();" style="margin: 0;">
 	<div id="header">
-		<h1 id="title"><?php echo $name; ?>test's Dashboard</h1>
+		<h1 id="title"><?php echo $name; echo date("Y-m-d"); ?>'s Dashboard</h1>
 	</div>
 	<div id="under">
 		<div id="avatarSideBar">

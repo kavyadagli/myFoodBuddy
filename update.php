@@ -6,7 +6,8 @@ $conn = new mysqli('localhost', 'root', 'ashSQLpassword', 'agendaDB');
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT food, calories FROM $table WHERE eatdate='" . date("Y-m-d") . "'";
+$date = date("Y-m-d");
+$sql = "SELECT food, calories FROM $table WHERE eatdate='$date'";
 $result = $conn->query($sql);
 
 echo "<div id='foodEaten' style='display: block;'>";

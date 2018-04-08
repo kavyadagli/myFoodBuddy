@@ -45,7 +45,6 @@ function addFood() {
 			'function': 'add',
 			'food': foodin,
 			'cal': calin,
-			'date': datein,
 		},
 		dataType: "json",
 		success: function(data) {
