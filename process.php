@@ -16,7 +16,7 @@ switch($function) {
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-		$sql = "INSERT INTO $table (food, calories, eatdate) VALUES ('$food', '$cal', '$date')";
+		$sql = "INSERT INTO $table (food, calories, eatdate) VALUES ('$food', '$cal', '$date');";
 		if ($conn->query($sql) === TRUE) {
 			echo "Success!";
 		} else {
