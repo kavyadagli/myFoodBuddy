@@ -22,9 +22,9 @@ if ($conn->connect_error) {
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="calculation.js"></script>
 </head>
-<body onload="updateList();">
+<body onload="updateList();" style="margin: 0;">
 	<div id="header">
-		<h1 id="headerText"><?php echo $name; ?>'s Dashboard</h1>
+		<h1 id="title"><?php echo $name; ?>'s Dashboard</h1>
 	</div>
 	<div id="under">
 		<div id="avatarSideBar">
