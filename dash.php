@@ -3,16 +3,6 @@ session_start();
 $user = $_SESSION['user'];
 $name = $_SESSION['name'];
 
-/*$servername = "localhost";
-$username = "root";
-$password = "ashSQLpassword";
-$dbname = "foodDB";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-}*/
 
 ?>
 <!DOCTYPE html>
