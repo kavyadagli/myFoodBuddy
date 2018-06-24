@@ -13,7 +13,7 @@ $activity = $_POST['activity'];
 
 $servername = "localhost";
 $username = "root";
-$password = "ashSQLpassword";
+$password = /*password*/;
 $dbname = "foodDB";
 
 $conn = new mysqli(/*insert information*/);
