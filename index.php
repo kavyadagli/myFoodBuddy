@@ -15,7 +15,7 @@
 		$password = "ashSQLpassword";
 		$dbname = "foodDB";
 		// Create Connection
-		$conn = new mysqli($servername, $username, $password, $dbname);
+		$conn = new mysqli(/*insert information*/);
 		// Check Connection
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
