@@ -12,7 +12,7 @@
 		
 		$servername = "localhost";
 		$username = "root";
-		$password = "ashSQLpassword";
+		$password = /*password*/;
 		$dbname = "foodDB";
 		// Create Connection
 		$conn = new mysqli(/*insert information*/);
