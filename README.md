@@ -1,3 +1,3 @@
 # myFoodBuddy
 
-on download insert SQL server login and password
+Visit the live demo at http://myfoodbuddy.net
